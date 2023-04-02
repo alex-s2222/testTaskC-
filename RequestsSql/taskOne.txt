@@ -1,0 +1,15 @@
+1) Вывести сотрудника с максимальной заработной платой
+SELECT * FROM Employee where salary = max(salary);
+
+2) Вывести одно число: максимальную длину цепочки руководителей по таблице сотрудников (вычислить глубину дерева).
+————————————-————————————-———————————
+
+3) Отдел, с максимальной суммарной зарплатой сотрудников.
+WITH sum_salary as
+(SELECT department_id, sum(salary) salary FROM  Employee
+GROUP  BY department_id )
+SELECT department_id FROM  sum_salary a
+WHERE a. salary = ( select max(salary) from sum_salary );
+
+4) Сотрудника, чье имя начинается на «Р» и заканчивается на «н».
+SELECT * FROM Employee WHERE name LIKE ‘Р%н’;
