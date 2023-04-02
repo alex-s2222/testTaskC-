@@ -4,11 +4,12 @@
 
 -[CountWrd](https://github.com/alex-s2222/testTaskC-/blob/main/NumberOfWords/CountWord.cs) (имеет два публичных метона)
 <ol>
-    <li>.writeToFile(file_name) создает файл на рабочем столе с словами и количество слов встречающимся в тексте </li>
-     <li>.printToConsole() выводит в консоле слово - кол-во слов встречающимся в тексте </li>
+    <li>.writeToFile(file_name) создает файл dict.txt на рабочем столе со словами и количество слов встречающимся в тексте </li>
+     <li>.printToConsole() выводит в консоле слово, кол-во слов встречающимся в тексте </li>
 </ol>
 
 ___
+Prorgam.cs - Исполняемый файл
 
 My.txt - Замятин мы 
 
